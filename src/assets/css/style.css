@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+:root {
+  --fontSize: 13px;
+  --fontFamily: "Oxygen", sans-serif;
+  --dark: #333333;
+  --light: #ffffff;
+  --grey: #666666;
+  --primary: #1a73e8;
+  --lightBlue: #cde4e1;
+}
+
+html,
+body {
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily);
+}
+
+h6 {
+  font-size: 1.4rem;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.bg-dark {
+  background-color: var(--dark) !important;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.navbar {
+  color: var(--light);
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+}
+
+.nav-link {
+  font-size: 1rem;
+}
+
+.dropdown-toggle::after {
+  transform: rotate(-90deg);
+}
+
+.pageContent {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+}
+
+.content {
+  min-height: 650px;
+}
+
+.pageContent .contentHeader {
+  padding: 1rem 1.5rem !important;
+  background-color: var(--grey) !important;
+  color: var(--light);
+}
+
+.pageContent .contentBody {
+  padding: 1rem 1.5rem !important;
+}
+
+.form-control {
+  border: 2px solid var(--lightBlue);
+  border-radius: 20px;
+  font-size: 1.05rem;
+  padding: 0.5rem 1rem;
+}
+
+.input-group .form-control {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.form-control::placeholder {
+  color: #66666650;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 2px solid var(--lightBlue);
+}
+
+button:focus {
+  box-shadow: none !important;
+}
+
+.input-group button {
+  border: 2px solid var(--primary);
+  background-color: var(--primary);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: var(--light);
+  font-size: 1rem;
+  font-family: "Segoe UI", var(--fontFamily);
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  min-width: 110px;
+  border-radius: 30px;
+}
+
+.btn.outline {
+  background: var(--light);
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn.outline:hover {
+  background: var(--primary);
+  color: var(--light);
+  border-color: var(--primary);
+}
+
+.border-bottom {
+  border-bottom: 1px solid #b5b5b5 !important;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #b5b5b5;
+}
+
+.nav-tabs .nav-item .nav-link,
+.nav-tabs .nav-link {
+  background-color: var(--light);
+  border-color: #b5b5b5;
+  margin-right: 5px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary);
+  font-family: var(--fontFamily);
+  position: relative;
+  overflow: hidden;
+  padding: 1rem 1.5rem;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: var(--primary);
+  background-color: var(--light);
+  border-color: var(--primary) #b5b5b5 var(--light) #b5b5b5;
+}
+
+.nav-tabs .nav-item.show .nav-link::after,
+.nav-tabs .nav-link.active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary);
+}
+
+.userListWrapper {
+  border: 1px solid #b5b5b5;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.userContentWrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.userContentFooter {
+  background-color: #e0e0e0;
+  padding: 1.1rem 1rem;
+  text-align: end;
+}
+
+.userList {
+  overflow-y: auto;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+
+.singleUser {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #b5b5b5;
+}
+
+.singleUser .name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 0px;
+}
+
+.singleUser .email {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--grey);
+  margin-bottom: 0px;
+}
+
+.singleUser.active {
+  background-color: var(--grey);
+}
+
+.singleUser.active .name {
+  color: var(--light);
+}
+
+.singleUser.active .email {
+  color: #d3d3d3;
+}
+
+.singleUser:last-child {
+  border-bottom: none;
+}
+
+.inviteUserBtn {
+  width: 100%;
+  border-radius: 0px;
+  padding: 1.5rem 1rem;
+}
+
+.rolesCardWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.rolesCardWrapper .assignBtns button {
+  font-size: 0.8rem;
+}
+
+.roleCard {
+  border: 1px solid #b5b5b5;
+}
+
+.roleCard.dark .cardTitle {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.roleCard .cardTitle {
+  background-color: #e0e0e0;
+  color: var(--dark);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.75rem;
+}
+
+.roleCard .cardBody .index {
+  font-size: 1rem;
+  font-weight: 700;
+  background: var(--dark);
+  height: 18px;
+  width: 18px;
+  border-radius: 18px;
+  color: var(--light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.accordion {
+  border-bottom: 1px solid #b5b5b5;
+}
+
+.roleCard .cardBody .accordion-button {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--dark);
+  padding: 0.5rem 0.75rem;
+}
+
+.roleCard .cardBody .accordion-button {
+  background-color: var(--grey);
+  color: var(--light);
+  border-radius: 0px !important;
+}
+
+.roleCard .cardBody .accordion-button.collapsed {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.roleCard .cardBody .accordion-item {
+  border-radius: 0px !important;
+  /* border-bottom: 1px solid #b5b5b5; */
+}
+
+.roleCard .cardBody .accordion-item:last-child {
+  border-radius: 0px !important;
+  border-bottom: none;
+}
+
+.accordion-button:not(.collapsed)::after,
+.accordion-button::after {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 0.75rem;
+  width: unset;
+  height: unset;
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+.accordion-button::after {
+  transform: rotate(0deg);
+}
+
+.roleCard .cardBody .accordion-body .icon {
+  font-size: 1.4rem;
+  margin-right: 0.7rem !important;
+}
+
+.roleCard .cardBody .accordion-body {
+  font-size: 1rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.roleCard .cardBody .accordion-body > div {
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 0rem;
+}
+
+@media (max-width: 560px) {
+  :root {
+    --fontSize: 12px;
+  }
+  .navbar-nav .nav-link {
+    text-align: center;
+  }
+  .nav-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .nav-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-tabs {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .nav-tabs .nav-item .nav-link,
+  .nav-tabs .nav-link {
+    white-space: nowrap;
+  }
+
+  .rolesCardWrapper {
+    display: block;
+  }
+}

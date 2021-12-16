@@ -1,6 +1,4 @@
-import UserListing from "./UserListing";
-import avatar from "../../../assets/images/user.png";
-import { Col, Row, Tab, Tabs } from "react-bootstrap";
+import { Tab, Tabs } from "react-bootstrap";
 import Roles from "./Roles";
 import CustomButton from "../../button";
 

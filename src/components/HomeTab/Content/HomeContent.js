@@ -1,7 +1,6 @@
 import UserListing from "./UserListing";
 import avatar from "../../../assets/images/user.png";
-import { Col, Row, Tab, Tabs } from "react-bootstrap";
-import Roles from "./Roles";
+import { Col, Row} from "react-bootstrap";
 import UserContent from "./UserContent";
 
 const HomeContent = () => {
@@ -10,22 +9,26 @@ const HomeContent = () => {
       name: "Steve Banks",
       email: "steve@meliometrics.com",
       image: avatar,
+      id: 1,
     },
     {
-      name: "Steve Banks",
-      email: "steve@meliometrics.com",
+      name: "Ali",
+      email: "ali@meliometrics.com",
       image: avatar,
       update: true,
+      id: 2,
     },
     {
       name: "Steve Banks",
       email: "steve@meliometrics.com",
       image: avatar,
+      id: 3,
     },
     {
       name: "Steve Banks",
       email: "steve@meliometrics.com",
       image: avatar,
+      id: 4,
     },
   ];
 

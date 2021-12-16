@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const AccordianCustom = (props) => {
   const { data } = props;
-  console.log(data);
   const rolesList = data.map((role, index) => {
     return (
       <Accordion.Item eventKey={index} key={index}>
@@ -21,7 +20,6 @@ const AccordianCustom = (props) => {
               </div>
             );
           })}
-          ;
         </Accordion.Body>
       </Accordion.Item>
     );

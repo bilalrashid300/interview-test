@@ -38,7 +38,7 @@ const Roles = () => {
   return (
     <div className="p-4 rolesCardWrapper">
       <RoleCard roles={roles} type="dark" />
-      <div className="assignBtns d-flex flex-column">
+      <div className="assignBtns d-flex flex-column align-self-center">
         <Button className="mb-3">
           Assign
           <FontAwesomeIcon icon={faChevronRight} className="ms-2" />

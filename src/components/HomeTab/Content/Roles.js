@@ -5,6 +5,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from "react-bootstrap";
 import AccordianCustom from "../../accordian";
+import Navigator from "../../navigatior";
 
 const Roles = () => {
   const roles = [
@@ -36,19 +37,22 @@ const Roles = () => {
   ];
 
   return (
-    <div className="p-4 rolesCardWrapper">
-      <RoleCard roles={roles} type="dark" />
-      <div className="assignBtns d-flex flex-column align-self-center">
-        <Button className="mb-3">
-          Assign
-          <FontAwesomeIcon icon={faChevronRight} className="ms-2" />
-        </Button>
-        <Button className="mb-3" disabled>
-          <FontAwesomeIcon icon={faChevronLeft} className="me-2" />
-          Rescind
-        </Button>
+    <div className="tabContentWrapper">
+      <div className="p-4 rolesCardWrapper">
+        <RoleCard roles={roles} type="dark" />
+        <div className="assignBtns d-flex flex-column align-self-center">
+          <Button className="mb-3">
+            Assign
+            <FontAwesomeIcon icon={faChevronRight} className="ms-2" />
+          </Button>
+          <Button className="mb-3" disabled>
+            <FontAwesomeIcon icon={faChevronLeft} className="me-2" />
+            Rescind
+          </Button>
+        </div>
+        <RoleCard roles={roles} />
       </div>
-      <RoleCard roles={roles} />
+      <Navigator />
     </div>
   );
 };

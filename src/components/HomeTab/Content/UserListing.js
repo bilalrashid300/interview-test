@@ -27,7 +27,6 @@ const UserListing = (props) => {
         </div>
         <div className="userList">
           {filterUser?.map((user, index) => {
-            console.log(search);
             return user?.name?.includes(search) ||
               user?.email?.includes(search) ? (
               <SingleUser
